@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Animate from "../components/Animate";
 import InViewDemo from "../components/InView";
 import Staggering from "../components/Staggering";
 import styles from "../styles/Home.module.css";
@@ -15,6 +16,7 @@ export default function Home() {
         Framer Motion demo
       </motion.h2>
       <Staggering />
+      <Animate />
       <article className={styles.wrapper}>
         <p className={styles.paragraph}>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate
