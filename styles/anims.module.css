@@ -1,0 +1,21 @@
+.viewSection {
+  min-height: 50vh;
+  padding: 50px;
+  border: solid 1px red;
+}
+
+.title {
+  font-size: 32px;
+  color: #fafafa;
+}
+
+.list {
+  list-style: none;
+  max-width: 50%;
+}
+
+.listItem {
+  border: solid 1px #fb7c27;
+  padding: 5px;
+  margin: 10px 0;
+}
