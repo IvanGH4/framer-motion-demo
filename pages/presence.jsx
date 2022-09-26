@@ -34,17 +34,23 @@ const Presence = () => {
       <AnimatePresence>
         {cardData && (
           <motion.div
-            key="card"
+            key='card'
             className={styles.card}
-            initial={{ scale: 0, y: '100vh', position: 'absolute' }}
-            animate={{ opacity: 1, scale: 1, y: '-25%' }}
-            exit={{ opacity: 0, scale: 0, y: '100vh' }}
+            initial={{ scale: 0, y: "100vh", position: "absolute" }}
+            animate={{ opacity: 1, scale: 1, y: "-25%" }}
+            exit={{ opacity: 0, scale: 0, y: "100vh" }}
           >
-            <p>Id: {cardData.id}</p>
+            <h4>
+              {cardData.first_name} {cardData.last_name}
+            </h4>
             <p>
-              Full name: {cardData.first_name} {cardData.last_name}
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+              nam atque iusto amet earum culpa corporis, dolore iste cumque at
+              sapiente accusamus deserunt id, consequatur necessitatibus soluta
+              fugiat totam illo error ex dignissimos optio perspiciatis nihil.
+              Maxime, asperiores nisi? Quam corporis sit aut quod! Autem unde
+              optio iusto? Aspernatur, excepturi?
             </p>
-            <p>Email: {cardData.email}</p>
             <button onClick={() => setCardData(undefined)}>Close</button>
           </motion.div>
         )}

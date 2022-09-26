@@ -15,6 +15,20 @@ a {
   box-sizing: border-box;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #d48a09;
+  color: #383838;
+  font-weight: 600;
+}
+
+nav a:last-child {
+  margin-left: 20px;
+}
+
 .container {
   max-width: 90%;
   margin: 0 auto;
